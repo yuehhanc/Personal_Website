@@ -25,7 +25,7 @@ SECRET_KEY = 'i9x_08y+lf5mmyr%4-4u_ah)fq(wim9zq0cg@7pyc80k!4-hka'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '52.207.216.192']
+ALLOWED_HOSTS = ['localhost', '52.207.216.192', 'www.yuehhan.com']
 
 
 # Application definition
