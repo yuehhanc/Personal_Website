@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+        {% load staticfiles %}
+        <!-- Citation: bootstrat.css library from Bootstrap -->     
+        <script src="{% static 'portfolio/jquery-1.11.1.js' %}" type="text/javascript"></script>
+        <script src="{% static 'portfolio/bootstrap.bundle.js' %}" type="text/javascript"></script>
+        <script src="{% static 'portfolio/base.js' %}" type="text/javascript"></script>
+        <link href="{% static 'portfolio/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    
+        <link href="{% static 'portfolio/base.css' %}" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'portfolio/images/cmu_icon.png' %}" />
+        <title> {% block title %} Yueh-Han Chuang {% endblock %} </title>
+    </head>
+
+    <body>
+
+        <div class="nav">   
+            <div class="logo">
+                <a href="{% url 'home' %}" style="text-decoration: none; font-size: 24px; color: #4f4f4f; font-variant: small-caps; font-weight: bold; font-family: 'FreeMono', monospace;">Yueh-Han's Universe</a>
+<!--                 <a href="{% url 'home' %}"><img src="{% static 'portfolio/Logo.png' %}" height="40px" onclick="location.href='{% url 'home' %}'"></a> -->
+            </div>  
+            <div class="menu">
+                <ul style="background-color: white;">
+                    <li class="nav_item">
+                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'gallery' %}'">
+                            <div class="item_con">Gallery</div> 
+                        </button>
+                    </li>
+                    <li class="nav_item">
+                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'about' %}'">
+                            <div class="item_con">About</div> 
+                        </button>
+                    </li>
+                    <li class="nav_item">
+                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'contact' %}'">
+                            <div class="item_con">Contact</div>  
+                        </button> 
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <div class="container-fluid bg-purple">
+            <br>
+            <br>
+            {% block bigPic %}
+            {% endblock %}        
+            <div class="row">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+        <br>
+        <hr>
+        <footer>
+            <div class="footerR">
+                <p>© 2018 Yueh-Han || Roland, Chuang</p>
+            </div>
+            <div class= "footerL">
+
+            </div>
+        </footer>
+    </body>
+</html>

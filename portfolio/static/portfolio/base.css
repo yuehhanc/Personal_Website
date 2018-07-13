@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color:white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+li {
+    display: inline-block;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+footer{
+    padding: 3vh;
+    height: 10vh;
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+}
+
+.logo{
+    background: transparent;
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 55%;
+    padding: 1%;
+
+}
+
+.logo > img{
+    flex-shrink: 0;
+    min-width:2%;
+    min-height: 2%;
+}
+
+.nav{
+    margin: 0 auto;
+    background-color:white;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,.5) 0px 10px 30px;
+    display: table;
+    border-bottom: 1px solid #f8f8f8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    height: 5vh;
+}
+
+.nav_item{
+    vertical-align: middle;
+    padding-left: 10px;
+    background-color: white;
+    font-family: 'FreeMono', monospace;
+}
+
+.menu{
+    display: table-cell;
+    vertical-align: middle;
+    background: ivory;
+}
+
+.item{
+    margin: 0px ;
+    position: relative;
+    padding: 0 8px;
+    white-space: nowrap ;
+    border: none;
+    background: transparent;
+    vertical-align: middle;
+}
+
+.item_con{
+    padding: 15px ;
+    line-height: 1 ;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    vertical-align: middle;
+    color: #4f4f4f;
+    font-size: 1.5rem;
+
+}
+
+.item_con:hover{
+    border-bottom: 3px solid #4f4f4f;
+}
+
+.titleLayer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    padding: 12vh;
+    left: 0vw;
+    z-index: 1;
+    transition: opacity 250ms;
+    visibility: visible;
+    opacity: 1;
+    font-size: 64px;
+    display: block;
+    line-height: 70vh;
+    font-family: 'Bradley Hand', cursive;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.footer {
+}
