@@ -112,7 +112,7 @@
 .dropdown-item1 {
     display: block;
     width: 100vw;
-    height: 10vh;
+    height: 100px;
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
