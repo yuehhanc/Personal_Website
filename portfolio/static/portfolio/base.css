@@ -149,7 +149,9 @@ footer{
     font-family: 'Chalkduster', 'fantasy';
 }
 
-
-
-.footer {
+.content {
+    text-align: left;
+    font-size: 2rem;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
+

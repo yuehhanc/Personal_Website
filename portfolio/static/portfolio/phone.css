@@ -163,6 +163,13 @@
     font-family: 'Bradley Hand', cursive;
 }*/
 
+.content {
+    text-align: left;
+    font-size: 2rem;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: bold;
+}
+
 footer{
     padding: 3vh;
     height: 10vh;
