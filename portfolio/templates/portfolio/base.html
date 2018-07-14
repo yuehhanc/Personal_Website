@@ -11,20 +11,20 @@
         <script src="{% static 'portfolio/base.js' %}" type="text/javascript"></script>
         <link href="{% static 'portfolio/bootstrap.css' %}" rel="stylesheet" type="text/css">
     
-        <link href="{% static 'portfolio/base.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'portfolio/base.css' %}" media="screen and (min-width: 1089px)" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" media="screen and (max-width: 1088px)" href="{% static 'portfolio/phone.css' %}">
         <link rel="shortcut icon" type="image/x-icon" href="{% static 'portfolio/images/cmu_icon.png' %}" />
         <title> {% block title %} Yueh-Han Chuang {% endblock %} </title>
     </head>
 
     <body>
-
         <div class="nav">   
             <div class="logo">
-                <a href="{% url 'home' %}" style="text-decoration: none; font-size: 24px; color: #4f4f4f; font-variant: small-caps; font-weight: bold; font-family: 'FreeMono', monospace;">Yueh-Han's Universe</a>
+                <a href="{% url 'home' %}" class="top-left-logo" style="text-decoration: none;">Yueh-Han's Universe</a>
 <!--                 <a href="{% url 'home' %}"><img src="{% static 'portfolio/Logo.png' %}" height="40px" onclick="location.href='{% url 'home' %}'"></a> -->
             </div>  
             <div class="menu">
-                <ul style="background-color: white;">
+                <ul>
                     <li class="nav_item">
                         <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'gallery' %}'">
                             <div class="item_con">Gallery</div> 
@@ -42,9 +42,29 @@
                     </li>
                 </ul>    
             </div>
+            <div class="dropdown menu-mobile">
+                <img class="btn btn-secondary menu-button" src="{% static 'portfolio/images/menu.png' %}" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                <ul class="dropdown-menu" aria-labelled-by="dropdownMenuButton">
+                    <li>
+                        <form method="get" action="{% url 'gallery' %}"> 
+                            <input type="submit" class='dropdown-item1' value="Gallery" />
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="{% url 'about' %}"> 
+                            <input type="submit" class='dropdown-item1' value="About" />
+                        </form>
+                    </li>
+                    <li>
+                        <form method="get" action="{% url 'contact' %}"> 
+                            <input type="submit" class='dropdown-item1' value="Contact" />
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </div>
         <br>
-        <div class="container-fluid bg-purple">
+        <div class="container-fluid">
             <br>
             <br>
             {% block bigPic %}
