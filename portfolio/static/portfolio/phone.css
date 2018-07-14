@@ -36,11 +36,17 @@
 
 .menu-button {
     /*flex-wrap: wrap;*/
-    border-radius: 0.5rem;
     width: 12rem;
     height: 9rem;
-    box-shadow: 0.1rem 0.1rem;
+    background-color: lightgray;
+    padding-right:0;
     border: solid;
+}
+
+.menu-button:hover {
+  color: lightgray;
+  background-color: #5a6268;
+  border-color: #545b62;
 }
 
 .top-left-logo {
