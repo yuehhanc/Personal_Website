@@ -26,13 +26,13 @@
             <div class="menu">
                 <ul>
                     <li class="nav_item">
-                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'about' %}'">
-                            <div class="item_con">About</div> 
+                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'gallery' %}'">
+                            <div class="item_con">Gallery</div> 
                         </button>
                     </li>
                     <li class="nav_item">
-                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'gallery' %}'">
-                            <div class="item_con">Gallery</div> 
+                        <button type="button" class="item" aria-haspopup="true" aria-expanded="false" aria-busy="false" onclick="location.href='{% url 'about' %}'">
+                            <div class="item_con">About</div> 
                         </button>
                     </li>
                     <li class="nav_item">
@@ -46,13 +46,13 @@
                 <img class="btn btn-secondary menu-button" src="{% static 'portfolio/images/menu.png' %}" type="button" id="dropdownMenuButton" data-toggle="dropdown">
                 <ul class="dropdown-menu" aria-labelled-by="dropdownMenuButton">
                     <li>
-                        <form method="get" action="{% url 'gallery' %}"> 
-                            <input aria-haspopup="true" aria-expanded="false" aria-busy="false" type="submit" class='dropdown-item1' value="Gallery" />
+                        <form method="get" action="{% url 'about' %}"> 
+                            <input aria-haspopup="true" aria-expanded="false" aria-busy="false" type="submit" class='dropdown-item1' value="About" />
                         </form>
                     </li>
                     <li>
-                        <form method="get" action="{% url 'about' %}"> 
-                            <input aria-haspopup="true" aria-expanded="false" aria-busy="false" type="submit" class='dropdown-item1' value="About" />
+                        <form method="get" action="{% url 'gallery' %}"> 
+                            <input aria-haspopup="true" aria-expanded="false" aria-busy="false" type="submit" class='dropdown-item1' value="Gallery" />
                         </form>
                     </li>
                     <li>
