@@ -181,7 +181,7 @@
 
 .content {
     text-align: left;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: bold;
 }
@@ -212,6 +212,7 @@ footer{
 .email {
     width: 90vw;
     border: solid;
+    font-size: 4rem;
 }
 
 .message {
@@ -219,4 +220,30 @@ footer{
     height: 50vh;
     border: solid;
     margin-top:2vh;
+    font-size: 4rem;
+}
+
+.category {
+    text-align: center;
+    height: 5rem;
+    font-size: 3rem;
+    font-family: Jazz LET, fantasy;
+    margin-top: 3rem;
+}
+
+.gallery-arrow {
+    width: 5rem;
+    margin-top: 18rem;
+}
+
+.gallery-arrow {
+    margin-left: 0rem;
+}
+
+.see-project-btn {
+    font-size: 3rem;
+    right: 0;
+    margin-left: 70vw;
+    width: 20rem;
+    height: 3rem;
 }

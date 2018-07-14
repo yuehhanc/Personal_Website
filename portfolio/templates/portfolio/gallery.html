@@ -1,7 +1,11 @@
 {% extends 'portfolio/base.html' %}
 
 {% block bigPic %}
-    <img src="/static/portfolio/images/angry_bird_3d.png" style="width:100vw;">
+<div class="row">
+    <div class='col-1' id="prev" onclick="clickPrev()"><img class='gallery-arrow gallery-arrow-left' src="/static/portfolio/images/left_arrow.png"></div>
+    <div class='col-10'><img id='gallery_pic' src="/static/portfolio/images/gallery_pic_0.png" style="margin-left:5vw;width:70vw; height:35rem;"></div>
+    <div class='col-1' id="next" onclick="clickNext()"><img class='gallery-arrow' src="/static/portfolio/images/right_arrow.png" style="margin-left: -1.5rem;"></div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -9,26 +13,14 @@
 {% endblock %}
 
 {% block extra %}
-    <div class="row">
-        <div class='col-6'>
-            <form method="get" action="https://youtu.be/PvOcw0Rtmho" >
-                <button class="gallery-btn">Angry Bird 3D</button>
-            </form>
-        </div>
-        <div class='col-6'>
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn">Cuper MariU</button>
-            </form>
-        </div>
-    </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-6">
-            <form method="get" action="{% url 'gallery' %}">
+            <form method="get" action="https://cmusds.pitpollutionmap.tk/">
                 <button class="gallery-btn">Pittsburgh Pollution Map</button>
             </form>
         </div>
         <div class="col-6">
-            <form method="get" action="{% url 'gallery' %}">
+            <form method="get" action="https://foodholic.yuehhan.com/">
                 <button class="gallery-btn">Food Holic</button>
             </form>
         </div>
@@ -36,46 +28,83 @@
     </div>
     <div class="row">
         <div class="col-6">
-            <form method="get" action="{% url 'gallery' %}">
+            <form method="get" action="https://coolmeme.yuehhan.com/">
                 <button class="gallery-btn">CoolMeme</button>
             </form>
         </div>
         <div class="col-6">
-            <form method="get" action="{% url 'gallery' %}">
+            <form method="get" action="https://shsmith5595.wixsite.com/windowmonkey">
                 <button class="gallery-btn">Window Monkey</button>
             </form>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <form method="get" action="https://youtu.be/PvOcw0Rtmho">
-                <button class="gallery-btn-mobile">Angry Bird 3D</button>
+        <div class='col-6'>
+            <form method="get" action="https://youtu.be/PvOcw0Rtmho" >
+                <button class="gallery-btn">Angry Bird 3D</button>
             </form>
         </div>
-        <div class="col-12">
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn-mobile">Cuper MariU</button>
+        <div class='col-6'>
+            <form method="get" action="https://youtu.be/JT1bba_jpsg">
+                <button class="gallery-btn">Cuper MariU</button>
             </form>
         </div>
+    </div> -->
+    <div class="row">
         <div class="col-12">
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn-mobile">Pittsburgh Pollution Map</button>
-            </form>
+            <hr>
+            <h1 class="category"> -Web Application- </h1>
+            <hr>
         </div>
         <div class="col-12">
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn-mobile">Food Holic</button>
-            </form>
+            <button class="gallery-btn-mobile" onclick="clickMap()">Pittsburgh Pollution Map</button>
+            <div id="map-detail">
+            </div>
         </div>
         <div class="col-12">
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn-mobile">CoolMeme</button>
-            </form>
+            <!-- <form method="get" action="https://foodholic.yuehhan.com/"> -->
+            <button class="gallery-btn-mobile" onclick="clickFood()">Food Holic</button>
+<!--             </form> -->
+            <div id="food-detail">
+            </div>
         </div>
         <div class="col-12">
-            <form method="get" action="{% url 'gallery' %}">
-                <button class="gallery-btn-mobile">Window Monkey</button>
-            </form>
+            <!-- <form method="get" action="https://coolmeme.yuehhan.com/"> -->
+            <button class="gallery-btn-mobile" onclick="clickCool()">CoolMeme</button>
+            <!-- </form> -->
+            <div id="cool-detail">
+            </div>
+        </div>
+        <div class="col-12">
+            <hr>
+            <h1 class="category"> -Robot- </h1>
+            <hr>
+        </div>
+        <div class="col-12">
+            <!-- <form method="get" action="https://shsmith5595.wixsite.com/windowmonkey"> -->
+            <button class="gallery-btn-mobile" onclick="clickMonkey()">Window Monkey</button>
+            <!-- </form> -->
+            <div id="monkey-detail">
+            </div>
+        </div>
+        <div class="col-12">
+            <hr>
+            <h1 class="category"> -Game- </h1>
+            <hr>
+        </div>
+        <div class="col-12">
+            <!-- <form method="get" action="https://youtu.be/PvOcw0Rtmho"> -->
+            <button class="gallery-btn-mobile" onclick="clickAngry()">Angry Bird 3D</button>
+            <!-- </form> -->
+            <div id="angry-detail">
+            </div>
+        </div>
+        <div class="col-12">
+            <!-- <form method="get" action="https://youtu.be/JT1bba_jpsg"> -->
+            <button class="gallery-btn-mobile" onclick="clickMario()">Cuper MariU</button>
+            <!-- </form> -->
+            <div id="mario-detail">
+            </div>
         </div>
     </div>
 

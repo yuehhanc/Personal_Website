@@ -11,6 +11,12 @@ from portfolio.forms import MessageForm
 from portfolio.models import Message
 from django.utils import timezone
 import os, shutil
+## Email Verification
+from django.contrib.auth.tokens import default_token_generator
+from django.core.mail import send_mail
+from django.contrib.auth.forms import (
+    AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
+)
 
 # Create your views here.
 def home(request):
@@ -39,6 +45,24 @@ def contact(request):
                           update_time=timezone.now())
     new_message.save()
     context['success'] = True
+
+    # sending emails to notify
+
+    email_body = """
+Please read the newest message from your personal website!
+From: {email_address}
+Content:
+{content}
+
+Sincerely,
+-yuehhan.com
+""".format(email_address=new_message.email, 
+           content=new_message.message)
+
+    send_mail(subject="A new message from yuehhan.com",
+              message= email_body,
+              from_email="yuehhanc@andrew.cmu.edu",
+              recipient_list=["yuehhanc@andrew.cmu.edu"])
     return render(request, 'portfolio/contact.html', context)
 
 def about(request):

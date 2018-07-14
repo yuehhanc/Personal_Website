@@ -180,7 +180,17 @@ footer{
 }
 
 .gallery-btn-mobile {
-    display: none;
+    /*display: none;*/
+    /* Should be or be not different?*/
+    text-align: center;
+    width: 100%;
+    border-radius:5px;
+    min-height: 10vh;
+    font-size: 36px;
+    background-color: skyblue;
+    color: white;
+    font-family: 'Chalkduster', 'fantasy';
+    margin-top: 0.5rem;
 }
 
 .content {
@@ -209,3 +219,27 @@ footer{
     margin-left: -8vw;
 }
 
+.category {
+    text-align: center;
+    height: 5rem;
+    font-size: 3rem;
+    font-family: Jazz LET, fantasy;
+    margin-top: 3rem;
+}
+
+.gallery-arrow {
+    width: 5vw;
+    margin-top: 13rem;
+}
+
+.gallery-arrow {
+    margin-left: 1.5rem;
+}
+
+.see-project-btn {
+    font-size: 2rem;
+    right: 0;
+    margin-left: 83vw;
+    width: 20rem;
+    height: 3rem;
+}
