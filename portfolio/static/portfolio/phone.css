@@ -40,13 +40,15 @@
     height: 9rem;
     padding-right:0;
     background-color: lightgray;
+    border-radius: 0.25rem;
     /*border: solid;*/
 }
 
 .menu-button:hover {
-  color: #fff;
-  background-color: #5a6268;
-  /*border-color: #545b62;*/
+    color: #fff;
+    background-color: #5a6268;
+    border-radius: 0.25rem;
+    /*border-color: #545b62;*/
 }
 
 .top-left-logo {
