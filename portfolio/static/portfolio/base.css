@@ -118,9 +118,27 @@ footer{
     transition: opacity 250ms;
     visibility: visible;
     opacity: 1;
-    font-size: 64px;
     display: block;
+    font-family: 'Bradley Hand', cursive;
+}
+
+.title-home {
     line-height: 70vh;
+}
+
+.contact-title {
+    width: 100vw;
+    font-size: 3rem;
+    height: 20rem;
+    word-wrap:break-word;
+    text-align: center;
+    background: rgba(255,255,255,0);
+    left: 0vw;
+    z-index: 1;
+    transition: opacity 250ms;
+    visibility: visible;
+    opacity: 1;
+    margin:10vh;
     font-family: 'Bradley Hand', cursive;
 }
 
@@ -169,5 +187,21 @@ footer{
     text-align: left;
     font-size: 2rem;
     font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.email {
+    width: 90vw;
+    border: solid;
+    margin: 1rem;
+}
+
+.message {
+    width: 90vw;
+    border: solid;
+    margin: 1rem;
+}
+
+.contact-btn {
+    margin-left: 60vw;
 }
 

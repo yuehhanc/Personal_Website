@@ -1,6 +1,32 @@
 {% extends 'portfolio/base.html' %}
 
 {% block bigPic %}
+<form method="post" action="{% url 'contact' %}">
+<div class="row" style="display: inline-block; width: 90vw">
+    <div class="contact-title">
+        {% if success %}
+            I'll reach out to you soon :)
+        {% endif %}
+        {% if not success %}
+            Leave your message!
+            <br>
+            <br>
+            <hr>
+            <div>
+                {{form}}
+            </div>
+        {% endif %}
+        <div class="col-4 left-content"></div>
+        <div class="col-4">
+            {% if not success %}
+                <button class="see_gallery contact-btn">Send</button>
+            {% endif %}
+        </div>
+        <br>
+    </div>
+</div>
+{% csrf_token %}
+</form>
 {% endblock %}
 
 {% block content %}

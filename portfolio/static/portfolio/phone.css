@@ -193,3 +193,30 @@ footer{
     font-size: 3rem;
     color: #444;
 }
+
+.contact-title {
+    width: 100vw;
+    font-size: 6rem;
+    height: 20rem;
+    word-wrap:break-word;
+    text-align: center;
+    background: rgba(255,255,255,0);
+    z-index: 1;
+    transition: opacity 250ms;
+    visibility: visible;
+    opacity: 1;
+    margin-top:8vh; 
+    font-family: 'Bradley Hand', cursive;
+}
+
+.email {
+    width: 90vw;
+    border: solid;
+}
+
+.message {
+    width: 90vw;
+    height: 50vh;
+    border: solid;
+    margin-top:2vh;
+}
