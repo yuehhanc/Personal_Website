@@ -38,13 +38,13 @@
     /*flex-wrap: wrap;*/
     width: 12rem;
     height: 9rem;
-    background-color: lightgray;
     padding-right:0;
+    background-color: lightgray;
     border: solid;
 }
 
 .menu-button:hover {
-  color: lightgray;
+  color: #fff;
   background-color: #5a6268;
   border-color: #545b62;
 }
