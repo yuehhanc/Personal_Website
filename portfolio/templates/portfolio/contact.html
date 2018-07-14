@@ -2,7 +2,7 @@
 
 {% block bigPic %}
 <form method="post" action="{% url 'contact' %}">
-<div class="row" style="display: inline-block; width: 90vw">
+<div class="row contact-row" style="display: inline-block; width: 90vw">
     <div class="contact-title">
         {% if success %}
             I'll reach out to you soon :)
@@ -16,15 +16,15 @@
                 {{form}}
             </div>
         {% endif %}
-        <div class="col-4 left-content"></div>
-        <div class="col-4">
-            {% if not success %}
-                <button class="see_gallery contact-btn">Send</button>
-            {% endif %}
-        </div>
-        <br>
     </div>
 </div>
+<div class="col-4 left-content"></div>
+<div class="col-4">
+    {% if not success %}
+        <button class="see_gallery contact-btn">Send</button>
+    {% endif %}
+</div>
+<br>
 {% csrf_token %}
 </form>
 {% endblock %}
