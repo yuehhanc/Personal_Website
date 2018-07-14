@@ -1,7 +1,82 @@
 {% extends 'portfolio/base.html' %}
 
 {% block bigPic %}
+    <img src="/static/portfolio/images/angry_bird_3d.png" style="width:100vw;">
 {% endblock %}
 
 {% block content %}
+   
+{% endblock %}
+
+{% block extra %}
+    <div class="row">
+        <div class='col-6'>
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">Angry Bird 3D</button>
+            </form>
+        </div>
+        <div class='col-6'>
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">Cuper MariU</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">Pittsburgh Pollution Map</button>
+            </form>
+        </div>
+        <div class="col-6">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">Food Holic</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">CoolMeme</button>
+            </form>
+        </div>
+        <div class="col-6">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn">Window Monkey</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">Angry Bird 3D</button>
+            </form>
+        </div>
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">Cuper MariU</button>
+            </form>
+        </div>
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">Pittsburgh Pollution Map</button>
+            </form>
+        </div>
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">Food Holic</button>
+            </form>
+        </div>
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">CoolMeme</button>
+            </form>
+        </div>
+        <div class="col-12">
+            <form method="get" action="{% url 'gallery' %}">
+                <button class="gallery-btn-mobile">Window Monkey</button>
+            </form>
+        </div>
+    </div>
+
 {% endblock %}

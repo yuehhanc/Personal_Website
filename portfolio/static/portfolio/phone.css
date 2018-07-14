@@ -163,6 +163,22 @@
     font-family: 'Bradley Hand', cursive;
 }*/
 
+.gallery-btn {
+    display: none;
+}
+
+.gallery-btn-mobile {
+    text-align: center;
+    width: 100%;
+    border-radius:5px;
+    min-height: 10vh;
+    font-size: 36px;
+    background-color: skyblue;
+    color: white;
+    font-family: 'Chalkduster', 'fantasy';
+    margin-top: 0.5rem;
+}
+
 .content {
     text-align: left;
     font-size: 2rem;
