@@ -1,9 +1,14 @@
 {% extends 'portfolio/base.html' %}
 
 {% block bigPic %}
+<div class="row"style="height:5rem; width: 100vw; text-align: center; font-size: 3rem;">
+    <div class="col-2"></div>
+    <div class="col-8" id="name" class="name">Angry Bird 3D</div>
+    <div class="col-2"></div>
+</div>
 <div class="row">
     <div class='col-1' id="prev" onclick="clickPrev()"><img class='gallery-arrow gallery-arrow-left' src="/static/portfolio/images/left_arrow.png"></div>
-    <div class='col-10'><img id='gallery_pic' src="/static/portfolio/images/gallery_pic_0.png" style="margin-left:5vw;width:70vw; height:35rem;"></div>
+    <div class='col-10'><img id='gallery_pic' class="gallery-pic-mobile" src="/static/portfolio/images/gallery_pic_0.png" style="margin-left:5vw;width:70vw; height:35rem;"></div>
     <div class='col-1' id="next" onclick="clickNext()"><img class='gallery-arrow' src="/static/portfolio/images/right_arrow.png" style="margin-left: -1.5rem;"></div>
 </div>
 {% endblock %}
@@ -63,7 +68,7 @@
         </div>
         <div class="col-12">
             <!-- <form method="get" action="https://foodholic.yuehhan.com/"> -->
-            <button class="gallery-btn-mobile" onclick="clickFood()">Food Holic</button>
+            <button class="gallery-btn-mobile" onclick="clickFood()">Foodaolic</button>
 <!--             </form> -->
             <div id="food-detail">
             </div>

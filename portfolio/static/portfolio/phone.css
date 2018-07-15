@@ -247,3 +247,11 @@ footer{
     width: 20rem;
     height: 3rem;
 }
+
+.gallery-pic-mobile {
+    top: 15rem;
+}
+
+.name {
+    display: none;
+}

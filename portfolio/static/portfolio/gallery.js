@@ -1,4 +1,5 @@
 var image_idx = 0;
+var names = ['Angry Bird 3D', 'Cuper MariU', 'Foodaholic', 'Coolmeme', 'Pittsburgh Pollution Map', 'Window Monkey'];
 function clickPrev() {
     image_idx--;
     if (image_idx < 0) {
@@ -7,6 +8,7 @@ function clickPrev() {
     $("#gallery_pic").fadeOut();
     $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
     $("#gallery_pic").fadeIn();
+    document.getElementById("name").innerHTML = names[image_idx];
 }
 
 function clickNext() {
@@ -15,6 +17,7 @@ function clickNext() {
     $("#gallery_pic").fadeOut();
     $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
     $("#gallery_pic").fadeIn();
+    document.getElementById("name").innerHTML = names[image_idx];
 }
 
 function clickMap() {
