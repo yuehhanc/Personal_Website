@@ -21,8 +21,8 @@
     <body>
         <div class="nav">   
             <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'portfolio/images/logo.png' %}" height="40px" onclick="location.href='{% url 'home' %}'"></a>
                 <a href="{% url 'home' %}" class="top-left-logo" style="text-decoration: none;">Yueh-Han's Universe</a>
-<!--                 <a href="{% url 'home' %}"><img src="{% static 'portfolio/Logo.png' %}" height="40px" onclick="location.href='{% url 'home' %}'"></a> -->
             </div>  
             <div class="menu">
                 <ul>
