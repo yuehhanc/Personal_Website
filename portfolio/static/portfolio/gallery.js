@@ -1,5 +1,21 @@
 var image_idx = 0;
 var names = ['Angry Bird 3D', 'Cuper MariU', 'Foodaholic', 'Coolmeme', 'Pittsburgh Pollution Map', 'Window Monkey'];
+
+$(document).ready(function() {
+    var map_detail = document.getElementById("map-detail");
+    map_detail.innerHTML = "";
+    var food_detail = document.getElementById("food-detail");
+    food_detail.innerHTML = "";
+    var cool_detail = document.getElementById("cool-detail");
+    cool_detail.innerHTML = "";
+    var monkey_detail = document.getElementById("monkey-detail");
+    monkey_detail.innerHTML = "";
+    var mario_detail = document.getElementById("mario-detail");
+    mario_detail.innerHTML = "";
+    var angry_detail = document.getElementById("angry-detail");
+    angry_detail.innerHTML = "";
+});
+
 function clickPrev() {
     image_idx--;
     if (image_idx < 0) {
