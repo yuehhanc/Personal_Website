@@ -1,11 +1,18 @@
 {% extends 'portfolio/base.html' %}
 
 {% block bigPic %}
+    <div id="stars_area">
+        <img id="star1" src="/static/portfolio/images/star.png" style="position: absolute; width:10rem; height:7rem; margin-left: -10rem; margin-top: -10rem;">
+        <img id="star2" src="/static/portfolio/images/star.png" style="transform: rotate(45deg); position: absolute; width:10rem; height:7rem; margin-left: -10rem; margin-top: 20rem;">
+        <img id="star3" src="/static/portfolio/images/star.png" style="transform: rotate(90deg); position: absolute; width:10rem; height:7rem; margin-left: 20rem; margin-top: -10rem;">
+        <img id="star4" src="/static/portfolio/images/star.png" style="transform: rotate(135deg); position: absolute; width:10rem; height:7rem; margin-left: -10rem; margin-top: 10rem;">
+        <img id="star5" src="/static/portfolio/images/star.png" style="transform: rotate(78deg); position: absolute; width:10rem; height:7rem; margin-left: 10rem; margin-top: -10rem;">
+    </div>
     <div class="titleLayer title-home" style="height: 72vh; font-size: 64px; word-wrap:break-word; text-align: center; background: rgba(255,255,255,0);">
 
         Welcome to Yueh-Han's Universe
     </div>
-    <div class="row back-pic" style="background-image: url(/static/portfolio/images/.jpg);">         
+    <div class="row back-pic">         
     </div>
 {% endblock %}
 {% block content %}

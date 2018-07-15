@@ -1,39 +1,47 @@
 var image_idx = 0;
 var names = ['Angry Bird 3D', 'Cuper MariU', 'Foodaholic', 'Coolmeme', 'Pittsburgh Pollution Map', 'Window Monkey'];
-
+var isGallery;
 $(document).ready(function() {
-    var map_detail = document.getElementById("map-detail");
-    map_detail.innerHTML = "";
-    var food_detail = document.getElementById("food-detail");
-    food_detail.innerHTML = "";
-    var cool_detail = document.getElementById("cool-detail");
-    cool_detail.innerHTML = "";
-    var monkey_detail = document.getElementById("monkey-detail");
-    monkey_detail.innerHTML = "";
-    var mario_detail = document.getElementById("mario-detail");
-    mario_detail.innerHTML = "";
-    var angry_detail = document.getElementById("angry-detail");
-    angry_detail.innerHTML = "";
+    isGallery = document.getElementById("gallery_pic");
+    if (isGallery != null) {
+        var map_detail = document.getElementById("map-detail");
+        map_detail.innerHTML = "";
+        var food_detail = document.getElementById("food-detail");
+        food_detail.innerHTML = "";
+        var cool_detail = document.getElementById("cool-detail");
+        cool_detail.innerHTML = "";
+        var monkey_detail = document.getElementById("monkey-detail");
+        monkey_detail.innerHTML = "";
+        var mario_detail = document.getElementById("mario-detail");
+        mario_detail.innerHTML = "";
+        var angry_detail = document.getElementById("angry-detail");
+        angry_detail.innerHTML = "";
+    }
+    
 });
 
 function clickPrev() {
-    image_idx--;
-    if (image_idx < 0) {
-        image_idx = 5;
+    if (isGallery != null) {
+        image_idx--;
+        if (image_idx < 0) {
+            image_idx = 5;
+        }
+        $("#gallery_pic").fadeOut();
+        $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
+        $("#gallery_pic").fadeIn();
+        document.getElementById("name").innerHTML = names[image_idx];
     }
-    $("#gallery_pic").fadeOut();
-    $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
-    $("#gallery_pic").fadeIn();
-    document.getElementById("name").innerHTML = names[image_idx];
 }
 
 function clickNext() {
-    image_idx++;
-    image_idx %= 6;
-    $("#gallery_pic").fadeOut();
-    $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
-    $("#gallery_pic").fadeIn();
-    document.getElementById("name").innerHTML = names[image_idx];
+    if (isGallery != null) {
+        image_idx++;
+        image_idx %= 6;
+        $("#gallery_pic").fadeOut();
+        $('#gallery_pic').attr('src', '/static/portfolio/images/gallery_pic_' + image_idx + '.png');
+        $("#gallery_pic").fadeIn();
+        document.getElementById("name").innerHTML = names[image_idx];
+    }
 }
 
 function clickMap() {
