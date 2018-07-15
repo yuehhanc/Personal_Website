@@ -123,7 +123,7 @@ function clickAngry() {
                            'Angry Bird 3D was a required, individual project in a popular course, 15112 Fundamentals of programming,' + 
                            ' at Carnegie Mellon University. In the game, a player can launch birdies with his/her mouse' +
                            " to destroy evil pigs. It was quite enjoyable to watch the whole world in a bird's eye view." +
-                           '</p><br><a class="see-project-btn" href="https://cmusds.pitpollutionmap.tk/">See Project</a>';
+                           '</p><br><a class="see-project-btn" href="https://youtu.be/PvOcw0Rtmho">See Project</a>';
         angry_detail.appendChild(detail);
     }  
 }
