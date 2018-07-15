@@ -120,5 +120,4 @@ function clickAngry() {
     }  
 }
 
-
-window.setInterval(clickNext, 10000);
+window.setInterval(clickNext, 5000);
