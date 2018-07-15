@@ -255,3 +255,15 @@ footer{
 .name {
     display: none;
 }
+
+.nav-logo-mobile {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.nav-words-mobile {
+    margin-left: -2.5rem;
+}
