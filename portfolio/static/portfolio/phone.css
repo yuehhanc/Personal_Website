@@ -267,3 +267,8 @@ footer{
 .nav-words-mobile {
     margin-left: -2.5rem;
 }
+
+.small-icon {
+    width:6rem;
+    height:6rem;
+}
