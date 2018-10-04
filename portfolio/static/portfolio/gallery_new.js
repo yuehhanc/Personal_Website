@@ -54,7 +54,7 @@ function clickMap() {
                            'Pittsburgh Pollution Map is a project which faculties in Social and Decision Science department devote to.' + 
                            ' Yueh-Han is the web developer to put their achievements online. Their goal is to help residents' +
                            " in Pittsburgh gain a better understanding of pollution in their hometown." +
-                           '</p><br><a class="see-project-btn" href="https://cmusds.pitpollutionmap.tk/">See Website</a>';
+                           '</p><br><a class="see-project-btn" href="https://www.pghairquality.com/">See Website</a>';
         map_detail.appendChild(detail);
     }  
 }
